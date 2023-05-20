@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blog</title>
+  <link rel="stylesheet" href="app.css">
+        <title>Blog của tôi</title>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            ul li {
+                display: inline-block;
+            }
+            .container {
+                display: flex;
+            }
+            .maincontent {
+                flex-basis: 85%;
+            }
+            .sidebar {
+
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            footer {
+                margin-top: 20px;
+                font-size: 1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="motion-demo">
+            <img src="data:image/png;base64,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" />
+          </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Bài viết hay</a></li>
+                    <li><a href="#">Tâm sự coder</a></li>
+                    <li><a href="#">Chuyện học tập</a></li>
+                    <li><a href="#">Giới thiệu về tôi</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="maincontent">
+                    <h1>Các ngôn ngữ lập trình phổ biến nên học</h1>
+                    <img src="https://vn.sutublog.com/files/2018/01/Programming-Languages-768x528.jpg"/>
+                    <p>“Một nghề cho chín còn hơn chín nghề”? Câu tục ngữ ấy bao đời liệu có còn đúng trong thế giới ngôn ngữ lập trình. Công nghệ càng hiện đại, số lượng các loại ngôn ngữ lập trình cũng tăng lên không ngừng. 
+
+                        Vậy ngôn ngữ lập trình gồm những loại nào? Đa dạng hay chuyên môn hóa? Lối đi nào mới thật sự đúng đắn cho bạn?
+                    </p>
+                    <a href="#">Đọc thêm</a>
+                    <h1>ChatGPT cơ hội và thách thức</h1>
+                    <img src="https://assets.website-files.com/6344c9cef89d6f2270a38908/64148ed756708f9b82464c96_image-of-hand-holding-an-ai-face-looking-at-the-words-chatgpt-openai.webp"/>
+                    <p>
+                        Chỉ mới ra mắt gần đây, thế nhưng ChatGPT đã được lan truyền rộng rãi và nhận nhiều đánh giá tích cực từ người dùng. ChatGPT có thể trả lời chi tiết và lưu loát trên nhiều lĩnh vực khác nhau, chính vì thế nhiều người cho rằng công nghệ này sẽ khiến Google phải "e dè". Vậy ChatGPT là gì?
+                        ChatGPT hay với tên gọi đầy đủ là Chat Generative Pre-training Transformer - một chatbot do công ty khởi nghiệp OpenAI phát triển. ChatGPT có thể được hiểu đơn giản là một AI (trí thông minh nhân tạo). Điểm đặc biệt của AI này nằm ở "kho" kiến thức mà ChatGPT đã học được.
+                    </p>
+                    <a href="#">Đọc thêm</a>
+                    <h1>Các framework CSS responsive phổ biến</h1>
+                    <img src="https://churchm.ag/wp-content/uploads/2012/10/Responsive-CSS-Framework-Comparison-1-620x494.png"/>
+                    <p>
+                        CSS Framework ra đời như một công cụ hỗ trợ các designer thiết kế giao diện website nhanh chóng và đẹp mắt với thời gian ngắn nhất nhưng ít lỗi nhất. CSS Framework là một bộ mã nguồn CSS đã được viết một số chức năng nhất định và khai báo mỗi chức năng đó vào một class riêng, để người sử dụng sẽ dễ dàng áp dụng nó vào dự án của họ bằng cách thêm class của thành phần muốn sử dụng vào phần tử họ cần áp dụng lên, ví dụ như thêm style cho một nút bấm chẳng hạn.
+                    </p>
+                    <a href="#">Đọc thêm</a>
+                    <h1>Git/Github cách quản lý kho code</h1>
+                    <img src="https://nordiccoder.com/app/uploads/2020/03/66-Git-v%C3%A0-Github.jpeg"/>
+                    <p>
+                        Một câu hỏi mà nhiều người đặt ra khi nhìn thấy serie này đó là Git là cái gì? Nó là ngôn ngữ lập trình gì chăng? Hay một loại thức ăn nào đó? Một kỹ thuật thiết kế website sao? Hoàn toàn không, bạn sẽ hiểu được Git là cái gì sau khi đọc hết từng chữ trong bài viết này.
+                        Thế bạn có thấy vấn đề gì xảy ra ở câu chuyện trên không? Mình thì mình thấy có hai vấn đề như sau:
+
+Việc tự code riêng và gửi cho nhau qua email rất mất thời gian của nhau. Giá như anh A có thể chủ động xem những thay đổi của anh B từ xa và tiến hành gộp trực tiếp những thay đổi của anh B vào sản phẩm.
+Việc sửa code mà không sao lưu khiến cho họ phải viết lại code từ đầu khi phần mềm bị lỗi.
+Và hai vấn đề trên Git có thể sẽ giúp hai anh chàng ấy giải quyết nhanh gọn lẹ và đơn giản hơn rất nhiều. Ngoài ra Git còn làm nhiều việc hơn nữa mà chỉ có thể sử dụng bạn mới hiểu được.
+                    </p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="sidebar">
+                    <h2>Kênh youtube của tôi</h2>
+                    <a href="#"><img src="https://www.watelectronics.com/wp-content/uploads/different-programming-languages.png"/></a>
+                    <p>Kênh youtube tập hợp các kiến thức về ngành Công nghệ thông tin mà tôi chia sẻ cho các bạn quan tâm!</p>
+                    <h2>Những bài viết nổi bật</h2>
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uJjgTz8I--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8k73hi03ck8mnm830xpu.png"/>
+                    <h3>SOLIDITY là gì ?</h3>
+                    <img src="https://topdev.vn/blog/wp-content/uploads/2019/05/la%CC%A3%CC%82p-tri%CC%80nh-hu%CC%9Bo%CC%9B%CC%81ng-%C4%91o%CC%82%CC%81i-tu%CC%9Bo%CC%9B%CC%A3ng-la%CC%80-gi%CC%80.png"/>
+                    <h3>OOP là gì ? Tại sao lại phải biết về OOP ?</h3>
+                    <img src="https://cdn.tgdd.vn/hoi-dap/1321801/javascript-la-gi-co-vai-tro-gi-cach-bat-javascript-tren.002.jpeg"/>
+                    <h3>Javascript một trong 10 ngôn ngữ lập trình phổ biến nhất</h3>  
+                    <h2>Bài viết mới nhất</h2>
+                    <img src="https://www.gosell.vn/blog/wp-content/uploads/2022/10/MMO-La-gi-1.jpg"/>
+                    <h3>MMO là gì ? Các hình thức kiếm tiền MMO mới nhất</h3>
+                    <img src="https://images.fpt.shop/unsafe/filters:quality(90)/fptshop.com.vn/uploads/images/tin-tuc/138522/Originals/blockchain-02.jpg"/>
+                    <h3>Công nghệ chuỗi khối là gì ?</h3>
+                    <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-01/bitcoin.jpg"/>
+                    <h3>Giải mã tiền kỹ thuật số</h3>  
+                </div>
+            </div>
+
+            <footer>
+                Mọi đóng góp ý kiến xin gửi về địa chỉ thư điện tử nvt097440@gmail.com
+            </footer>
+    </body>
+</html>
